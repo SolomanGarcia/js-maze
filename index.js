@@ -179,22 +179,22 @@ document.addEventListener("keydown", (event) => {
   const { x, y } = ball.velocity;
 
   // Up
-  if (event.keyCode === 87) {
+  if (event.keyCode === 38) {
     Body.setVelocity(ball, { x, y: y - 5 });
   }
 
-  // Down
-  if (event.keyCode === 68) {
+  // Right
+  if (event.keyCode === 39) {
     Body.setVelocity(ball, { x: x + 5, y });
   }
 
-  // Left
-  if (event.keyCode === 83) {
+  // Down
+  if (event.keyCode === 40) {
     Body.setVelocity(ball, { x, y: y + 5 });
   }
 
-  // Right
-  if (event.keyCode === 65) {
+  // Left
+  if (event.keyCode === 37) {
     Body.setVelocity(ball, { x: x - 5, y });
   }
 });
